@@ -16,6 +16,9 @@
 
 # Pick up overlay for features that depend on non-open-source files
 PRODUCT_PACKAGES += \
+    com.qualcomm.location
+
+PRODUCT_PACKAGES += \
     qcrilmsgtunnel \
     shutdownlistener \
     TimeService
@@ -32,6 +35,16 @@ PRODUCT_PACKAGES += \
     libloc_ds_api
 
 PRODUCT_PACKAGES += \
-    libtime_genoff
+    libtime_genoff \
+    libdiag \
+    libdsutils \
+    libmdmdetect \
+    libqcci_legacy \
+    libqmi \
+    libqmi_client_qmux \
+    libqmiservices
+
+PRODUCT_PACKAGES += \
+    keystore.msm8994
 
 $(call inherit-product, vendor/oneplus/oneplus2/oneplus2-vendor-blobs.mk)
