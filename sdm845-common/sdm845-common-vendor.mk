@@ -513,7 +513,8 @@ PRODUCT_PACKAGES += \
     WfdCommon \
     com.qti.dpmframework \
     qcnvitems \
-    qcrilhook
+    qcrilhook \
+    qti-telephony-common
 endif
 
 -include vendor/extra/devices.mk
